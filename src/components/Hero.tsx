@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative py-12 overflow-hidden">
+    <section id="home" className="relative py-8 overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-4 items-center">
           {/* Left Content */}
           <div className="space-y-10">
-            <div className="space-y-6">
+            <div className="space-y-6 flex flex-col gap-2 items-center md:items-start">
               <div className="border border-[#D4A57433] w-fit rounded-full px-3 gap-1 py-2 flex items-center justify-center">
                 <div className="w-4 h-4 relative">
                   <ImageWithLoading
@@ -23,20 +23,19 @@ const Hero = () => {
               </div>
 
               <div className="space-y-4">
-                <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[0.95] tracking-tight text-[#2D2822]">
+                <h1 className="text-4xl text-center md:text-left lg:text-7xl font-bold text-foreground leading-[0.95] tracking-tight text-[#2D2822]">
                   Artisan
-                  <span className="block text-primary text-[#CC1015]">
+                  <span className="inline md:block text-primary text-[#CC1015] sm:ml-2 md:ml-0">
                     Perfection
                   </span>
-                  <span className="block text-4xl lg:text-5xl font-medium text-muted-foreground text-[#866741]">
+                  <span className="block text-3xl lg:text-5xl font-medium text-muted-foreground text-[#866741] mt-1">
                     at Naresh Bakers
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground max-w-lg leading-relaxed text-[#866741]">
-                  Where traditional baking craftsmanship meets modern flavors.
-                  Every cake, pastry, and bread at Naresh Bakery is handcrafted
-                  with love, baked fresh daily using premium ingredients, and
-                  perfected to delight every celebration.
+                <p className="text-xl text-muted-foreground max-w-lg leading-relaxed text-[#866741] text-center md:text-left">
+                  At Naresh Bakery, we handcraft fresh cakes, pastries, and
+                  breads with premium ingredients. Perfected to make your sweet
+                  moments sweeter!
                 </p>
               </div>
             </div>
@@ -53,7 +52,7 @@ const Hero = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary text-[#CC1015]">
-                  2K+
+                  10K+
                 </div>
                 <div className="text-sm text-muted-foreground font-medium text-[#866741]">
                   Happy Customers
@@ -70,26 +69,39 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex sm:flex-row gap-5 justify-center md:justify-start">
               <Link href="https://naresh-bakers.vercel.app/" target="_blank">
-                <button className="cursor-pointer transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] text-white bg-[#CC1015] rounded-lg px-4 py-2 flex gap-2 items-center justify-center">
-                  Explore Our Menu
+                <button className="cursor-pointer transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] text-white bg-[#CC1015] border-2 border-transparent rounded-lg px-4 py-2 flex gap-2 items-center justify-center">
+                  Explore Menu
                   <div className="w-4 h-4 relative">
                     <ImageWithLoading
                       className="object-contain"
                       src={`/icons/arrow-right.svg`}
-                      alt={`naresh-logo.png`}
+                      alt={`arrow-right`}
                     />
                   </div>
                 </button>
               </Link>
-              <button className="transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-[#CC1015] text-[#CC1015] bg-white rounded-lg px-4 py-2">
-                Schedule Consultation
+
+              <button className="transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-[#CC1015] text-[#CC1015] bg-white rounded-lg px-4 py-2 cursor-pointer">
+                <a
+                  href={`tel:+919005163430`}
+                  className="flex items-center gap-2"
+                >
+                  <div className="w-4 h-4 relative">
+                    <ImageWithLoading
+                      className="object-contain"
+                      src={`/icons/phone.svg`}
+                      alt={`phone`}
+                    />
+                  </div>
+                  Let's Talk Cake
+                </a>
               </button>
             </div>
 
             {/* Features */}
-            <div className="flex items-center space-x-8 text-sm">
+            <div className="hidden md:flex items-center space-x-8 text-sm">
               <div className="flex items-center justify-center text-muted-foreground gap-2">
                 <div className="w-4 h-4 relative">
                   <ImageWithLoading

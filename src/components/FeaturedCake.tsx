@@ -71,10 +71,10 @@ const FeaturedCake = () => {
     },
   ];
   return (
-    <section className="py-6 relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 relative">
         {/* Section Header */}
-        <div className="text-center my-20 flex flex-col items-center gap-4">
+        <div className="text-center my-10 md:my-20 flex flex-col items-center gap-4">
           <div className="px-6 py-3 bg-[#D4A5741A] border-[0.67px] border-[#D4A57433] rounded-full w-fit flex items-center gap-2">
             <div className="w-4 h-4 relative">
               <ImageWithLoading
@@ -87,16 +87,15 @@ const FeaturedCake = () => {
               Featured Creations
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight text-[#2D2822]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight text-[#2D2822]">
             Our Signature
             <span className="block text-primary text-[#CC1015]">
               Masterpieces
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground mx-auto leading-relaxed text-[#866741] max-w-4xl">
-            Discover our most celebrated cakes, each crafted with exceptional
-            attention to detail and using the finest ingredients. Perfect for
-            life's most special moments.
+          <p className="text-xl text-muted-foreground mx-auto leading-relaxed text-[#866741]">
+            Crafted with premium ingredients and obsessive detail. Built for
+            your best moments!
           </p>
         </div>
 
@@ -258,27 +257,18 @@ const FeaturedCake = () => {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <button className="flex items-center gap-1 justify-center transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-[#CC1015] text-[#CC1015] bg-white rounded-2xl px-4 py-2">
-                      <div className="w-4 h-4 relative mt-1">
-                        <ImageWithLoading
-                          className="object-contain"
-                          src={`/icons/heart.svg`}
-                          alt={`naresh-logo.png`}
-                        />
-                      </div>
-                      Save
-                    </button>
-
-                    <button className="flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
-                      Order Now
-                      <div className="w-4 h-4 relative">
-                        <ImageWithLoading
-                          className="object-contain"
-                          src={`/icons/arrow-right.svg`}
-                          alt={`naresh-logo.png`}
-                        />
-                      </div>
-                    </button>
+                    <a href={`tel:+919005163430`}>
+                      <button className="flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
+                        <div className="w-4 h-4 relative">
+                          <ImageWithLoading
+                            className="object-contain"
+                            src={`/icons/phone-white.svg`}
+                            alt={`naresh-logo.png`}
+                          />
+                        </div>
+                        Order Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -294,10 +284,19 @@ const FeaturedCake = () => {
             </h3>
             <p className="text-muted-foreground max-w-md text-[#866741]">
               Our master bakers can create a completely custom cake for your
-              special occasion. Let's bring your vision to life.
+              special occasion. Let's bring your vision to life!
             </p>
-            <button className="w-fit flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
-              Schedule Consultation
+            <button className="transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
+              <a href={`tel:+919005163430`} className="flex items-center justify-center gap-2 ">
+                <div className="w-4 h-4 relative">
+                  <ImageWithLoading
+                    className="object-contain"
+                    src={`/icons/phone-white.svg`}
+                    alt={`naresh-logo.png`}
+                  />
+                </div>
+                Schedule Consultaiton
+              </a>
             </button>
           </div>
         </div>

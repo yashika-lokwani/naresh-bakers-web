@@ -101,7 +101,7 @@ const Products = () => {
     <section className="py-6 relative">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         {/* Section Header */}
-        <div className="text-center my-20 flex flex-col items-center gap-4">
+        <div className="text-center my-10 md:my-20 flex flex-col items-center gap-4">
           <div className="px-6 py-3 bg-[#D4A5741A] border-[0.67px] border-[#D4A57433] rounded-full w-fit flex items-center gap-2">
             <div className="w-4 h-4 relative">
               <ImageWithLoading
@@ -114,13 +114,11 @@ const Products = () => {
               Handcrafted Excellence
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight text-[#2D2822]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-1 leading-tight text-[#2D2822]">
             Our Artisan Collection
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-[#866741]">
-            Discover our carefully curated selection of handcrafted cakes,
-            pastries, and breads. Each creation is made with premium ingredients
-            and traditional techniques.
+          <p className="text-xl text-muted-foreground mx-auto leading-relaxed text-[#866741]">
+            Premium cakes, pastries, and bread. Made with traditional care!
           </p>
         </div>
 
@@ -225,6 +223,20 @@ const Products = () => {
                       </span>
                     )}
                   </div>
+                  <div className="flex items-center space-x-3">
+                    <a href={`tel:+919005163430`}>
+                      <button className="flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
+                        <div className="w-4 h-4 relative">
+                          <ImageWithLoading
+                            className="object-contain"
+                            src={`/icons/phone-white.svg`}
+                            alt={`naresh-logo.png`}
+                          />
+                        </div>
+                        Order Now
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,12 +245,12 @@ const Products = () => {
 
         <div className="text-center mt-20 flex items-center justify-center">
           <div className="border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] flex flex-col items-center gap-4 w-fit py-10 px-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-foreground text-[#2D2822]">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground text-[#2D2822]">
               Craving Something Special?
             </h3>
             <p className="text-muted-foreground max-w-md text-[#866741]">
-              Explore our complete menu with over 100 handcrafted items,
-              including seasonal specialties and custom creations.
+              Explore our complete menu with 100+ handcrafted items,
+              including seasonal specialties & custom creations.
             </p>
             <Link href="https://naresh-bakers.vercel.app/" target="_blank">
               <button className="cursor-pointer w-fit flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">

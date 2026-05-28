@@ -88,40 +88,38 @@ const Footer = () => {
             <h4 className="font-bold text-background text-lg">Explore</h4>
             <nav className="flex flex-col space-y-3">
               <a
-                href="#home"
+                href=""
                 className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
               >
                 Home
               </a>
               <a
-                href="#cakes"
+                href="https://naresh-bakers.vercel.app/3"
+                target="_blank"
                 className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
               >
                 Wedding Cakes
               </a>
               <a
-                href="#pastries"
+                href="https://naresh-bakers.vercel.app/4"
+                target="_blank"
                 className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
               >
-                Artisan Pastries
+                Birthday Cakes
               </a>
               <a
-                href="#about"
+                href="https://naresh-bakers.vercel.app/8"
+                target="_blank"
                 className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
               >
-                Our Story
+                Two Tier Cakes
               </a>
               <a
-                href="#contact"
+                href="https://naresh-bakers.vercel.app/9"
+                target="_blank"
                 className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
               >
-                Contact Us
-              </a>
-              <a
-                href="#catering"
-                className="text-background/80 hover:text-primary transition-colors text-sm font-medium"
-              >
-                Catering Services
+                Three Tier Cakes
               </a>
             </nav>
           </div>
@@ -133,31 +131,27 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <div className="text-sm text-background/80">
                   <div className="font-medium text-background">
-                    123 Baker Street
+                    Aryan Restaurant, Jal Sansthan, C-3339, kiddy dress, Meena
+                    Bakery Rd, opposite SKD School, Block C, Rajajipuram,
                   </div>
-                  <div>Sweet Valley, CA 90210</div>
+                  <div>Lucknow, Uttar Pradesh 226017</div>
                   <div className="mt-1 text-primary text-xs font-medium">
-                    Get Directions →
+                    <a
+                      href="https://maps.app.goo.gl/9g2MVSAfTAjMPYpp9"
+                      target="_blank"
+                    >
+                      Get Directions →
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <div>
                   <div className="text-sm font-medium text-background">
-                    (555) 123-4567
+                    +91 90051 63430
                   </div>
                   <div className="text-xs text-background/60">
                     Call for custom orders
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div>
-                  <div className="text-sm font-medium text-background">
-                    hello@caramella.com
-                  </div>
-                  <div className="text-xs text-background/60">
-                    We'd love to hear from you
                   </div>
                 </div>
               </div>
@@ -188,9 +182,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="py-3 bg-primary/20 rounded-xl">
-                <div className="font-semibold">
-                  Special Holiday Hours
-                </div>
+                <div className="font-semibold">Special Holiday Hours</div>
                 <div className="text-background/80 mt-1">
                   Extended hours during peak seasons
                 </div>
@@ -200,30 +192,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="py-8 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 px-6">
-          <div className="flex items-center space-x-2 text-sm text-background/80">
-            <span>© Naresh Bakery. Crafted with</span>
-            <span>in Sweet Valley</span>
-          </div>
-          <div className="flex space-x-8 text-sm text-background/80">
-            <a
-              href="#privacy"
-              className="hover:text-primary transition-colors font-medium"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#terms"
-              className="hover:text-primary transition-colors font-medium"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#accessibility"
-              className="hover:text-primary transition-colors font-medium"
-            >
-              Accessibility
-            </a>
+        <div className="py-2 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 px-6">
+          <div className="flex items-center justify-center space-x-2 text-sm text-background/80 w-full">
+            <span>© Naresh Bakers. All Right Reserved</span>
           </div>
         </div>
       </div>

@@ -3,3 +3,12 @@
 *{
   transition: all 0.3s ease;
 }
+
+@keyframes move {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
