@@ -48,7 +48,7 @@ const FeaturedCake = () => {
         "Intense dark chocolate ganache layered between moist sponge.",
       longDescription:
         "Indulge in a profoundly intense dessert masterpiece showcasing alternating layers of moist chocolate sponge cake, beautifully finished with a coating of fine premium chocolate flakes!",
-      price: "Starting from ₹49",
+      price: "Starting from ₹69",
       // originalPrice: "₹99.00",
       image: "/images/chocolate-pastry.png",
       category: "Premium",
@@ -255,9 +255,9 @@ const FeaturedCake = () => {
                       <span className="text-3xl font-bold text-primary text-[#CC1015]">
                         {cake.price}
                       </span>
-                      {cake?.originalPrice && (
+                      {cake.originalPrice && (
                         <span className="text-lg text-muted-foreground line-through">
-                          {cake?.originalPrice}
+                          {cake.originalPrice}
                         </span>
                       )}
                     </div>
