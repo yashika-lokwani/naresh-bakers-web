@@ -22,25 +22,25 @@ const CustomerFeedback = () => {
         {/* Stats Bar */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">4.8 ★</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">4.3 ★</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Average Rating
             </div>
           </div>
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">10K+</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">50,000+</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Happy Customers
             </div>
           </div>
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">15K+</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">1,00,000+</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Orders Completed
             </div>
           </div>
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">98%</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">99%</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Would Recommend
             </div>

@@ -27,18 +27,17 @@ const Header = () => {
                 <div className="w-15 h-15 relative">
                   <ImageWithLoading
                     className="object-contain"
-                    src="/naresh-logo.png"
+                    src="/naresh-logo.svg"
                     alt="Naresh Bakery logo"
                   />
                 </div>
-                <span className="text-white font-bold text-lg">C</span>
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#2D2822]">
-                  Naresh Bakery
+                  Naresh Bakers
                 </h1>
-                <span className="text-xs font-medium text-[#866741] uppercase">
-                  the bakery shop
+                <span className="text-s font-medium text-[#775832]">
+                  Love at First Bite!
                 </span>
               </div>
             </div>

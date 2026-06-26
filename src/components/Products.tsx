@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Products = () => {
-  const categories = ["All", "Cakes", "Pastries", "Breads"];
+  const categories = ["All", "Cakes", "Pastries",  "Cookies"];
   const products = [
     {
       id: 1,
@@ -86,16 +86,26 @@ const Products = () => {
   ];
   const [selectedCategory, setSelectedCategory] = useState(0);
   const [filteredProducts, setFilteredProducts] = useState<any>(products);
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const handleClick = (index: number) => {
     setSelectedCategory(index);
-    if (index == 0) setFilteredProducts(products);
+    if (index === 0) {
+      setFilteredProducts(products);
+      setIsExpanded(false);
+    }
     else {
       const newFilter = products.filter(
-        (item) => item.category == categories[index],
+        (item) => item.category === categories[index],
       );
       setFilteredProducts(newFilter);
     }
   };
+
+  const displayedProducts =
+    selectedCategory === 0 && !isExpanded
+      ? filteredProducts.slice(0, 3)
+      : filteredProducts;
 
   return (
     <section className="py-6 relative">
@@ -143,7 +153,7 @@ const Products = () => {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {filteredProducts.map((product: any) => (
+          {displayedProducts.map((product: any) => (
             <div
               key={product.id}
               className="bg-card text-card-foreground flex flex-col gap-6 group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm rounded-3xl"
@@ -242,6 +252,17 @@ const Products = () => {
             </div>
           ))}
         </div>
+
+        {selectedCategory === 0 && !isExpanded && filteredProducts.length > 3 && (
+          <div className="flex justify-center mb-16">
+            <button
+              onClick={() => setIsExpanded(true)}
+              className="cursor-pointer w-fit flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-6 py-3"
+            >
+              View More
+            </button>
+          </div>
+        )}
 
         <div className="text-center mt-20 flex items-center justify-center">
           <div className="border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] flex flex-col items-center gap-4 w-fit py-10 px-8 rounded-xl">

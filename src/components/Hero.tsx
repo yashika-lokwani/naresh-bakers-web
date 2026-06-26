@@ -1,6 +1,36 @@
 import ImageWithLoading from "@/shared/ImageWithLoading";
 import Link from "next/link";
 
+const featuredItems = [
+  {
+    title: "Pineapple Cake",
+    description: "Moist vanilla pineapple delight",
+    imageSrc: "/images/pineapple.png",
+    imageAlt: "Signature Chocolate Cake",
+  },
+
+  {
+    title: "Cookies",
+    description: "Bespoke designs for your day",
+    imageSrc:
+      "/images/cookies.png",
+    imageAlt: "Custom Wedding Cake",
+  },
+  {
+    title: "Rev Velvet",
+    description: "Tasty, laminated perfection",
+    imageSrc: "/images/red_velvet.png",
+    imageAlt: "Rev Velvet",
+  },
+  {
+    title: "Customizable Cakes",
+    description: "Traditional fermentation methods",
+    imageSrc:
+      "/images/customizable.png",
+    imageAlt: "Sourdough Collection",
+  },
+];
+
 const Hero = () => {
   return (
     <section id="home" className="relative py-8 overflow-hidden">
@@ -44,7 +74,7 @@ const Hero = () => {
             <div className="flex items-center space-x-12">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary text-[#CC1015]">
-                  15+
+                  11+
                 </div>
                 <div className="text-sm text-muted-foreground font-medium text-[#866741]">
                   Years Crafting
@@ -52,7 +82,7 @@ const Hero = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary text-[#CC1015]">
-                  10K+
+                  50K+
                 </div>
                 <div className="text-sm text-muted-foreground font-medium text-[#866741]">
                   Happy Customers
@@ -131,84 +161,46 @@ const Hero = () => {
           <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6">
-                <div className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2">
-                  <div className="h-30 relative rounded-md overflow-hidden">
-                    <ImageWithLoading
-                      src={
-                        "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop&crop=center"
-                      }
-                      alt="Signature Chocolate Cake"
-                    />{" "}
+                {featuredItems.slice(0, 2).map((item) => (
+                  <div
+                    key={item.title}
+                    className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2"
+                  >
+                    <div className="h-33 relative rounded-md overflow-hidden">
+                      <ImageWithLoading
+                        src={item.imageSrc}
+                        alt={item.imageAlt}
+                      />
+                    </div>
+                    <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground text-[#866741]">
+                      {item.description}
+                    </p>
                   </div>
-                  <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
-                    Signature Chocolate
-                  </h3>
-                  <p className="text-sm text-muted-foreground text-[#866741]">
-                    Rich Belgian chocolate layers
-                  </p>
-                  <div className="text-primary font-bold text-xl text-[#CC1015]">
-                    ₹28.99
-                  </div>
-                </div>
-                <div className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2">
-                  <div className="h-30 relative  rounded-md overflow-hidden">
-                    <ImageWithLoading
-                      src={
-                        "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=300&h=200&fit=crop&crop=center"
-                      }
-                      alt="Artisan Croissants"
-                    />
-                  </div>
-                  <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
-                    Artisan Croissants
-                  </h3>
-                  <p className="text-sm text-muted-foreground text-[#866741]">
-                    Buttery, laminated perfection
-                  </p>
-                  <div className="text-primary font-bold text-xl text-[#CC1015]">
-                    ₹4.99
-                  </div>
-                </div>
+                ))}
               </div>
               <div className="space-y-6 mt-12">
-                <div className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2">
-                  <div className="h-30 relative  rounded-md overflow-hidden">
-                    <ImageWithLoading
-                      src={
-                        "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=200&fit=crop&crop=center"
-                      }
-                      alt="Custom Wedding Cake"
-                    />
+                {featuredItems.slice(2).map((item) => (
+                  <div
+                    key={item.title}
+                    className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2"
+                  >
+                    <div className="h-33 relative rounded-md overflow-hidden">
+                      <ImageWithLoading
+                        src={item.imageSrc}
+                        alt={item.imageAlt}
+                      />
+                    </div>
+                    <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground text-[#866741]">
+                      {item.description}
+                    </p>
                   </div>
-                  <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
-                    Wedding Collection
-                  </h3>
-                  <p className="text-sm text-muted-foreground text-[#866741]">
-                    Bespoke designs for your day
-                  </p>
-                  <div className="text-primary font-bold text-xl  text-[#CC1015]">
-                    From ₹200
-                  </div>
-                </div>
-                <div className="bg-[#FFFFFFE5] border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] rounded-3xl p-6 flex flex-col gap-2">
-                  <div className="h-30 relative  rounded-md overflow-hidden">
-                    <ImageWithLoading
-                      src={
-                        "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=200&fit=crop&crop=center"
-                      }
-                      alt="Sourdough Collection"
-                    />
-                  </div>
-                  <h3 className="font-bold text-foreground text-lg text-[#2D2822]">
-                    Sourdough Collection
-                  </h3>
-                  <p className="text-sm text-muted-foreground text-[#866741]">
-                    Traditional fermentation methods
-                  </p>
-                  <div className="text-primary font-bold text-xl text-[#CC1015]">
-                    ₹7.99
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 

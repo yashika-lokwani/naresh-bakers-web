@@ -52,7 +52,7 @@ const Footer = () => {
                   <div className="w-20 h-20 relative">
                     <ImageWithLoading
                       className="object-contain"
-                      src={`/naresh-logo.png`}
+                      src={`/naresh-logo.svg`}
                       alt={`naresh-logo.png`}
                     />
                   </div>

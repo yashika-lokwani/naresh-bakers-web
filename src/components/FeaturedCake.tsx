@@ -4,69 +4,68 @@ const FeaturedCake = () => {
   const featuredCakes = [
     {
       id: 1,
-      name: "Caramella Crown Cake",
+      name: "Wedding Cake",
       description: "Our signature multi-layer masterpiece",
       longDescription:
-        "A towering celebration of flavors featuring vanilla bean sponge, salted caramel buttercream, chocolate ganache, and gold leaf accents. This is our most requested cake for special occasions.",
-      price: "₹85.99",
-      image:
-        "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&h=400&fit=crop&crop=center",
+        "An indulgent celebration of sweetness featuring velvet fudge sponge, creamy milk chocolate buttercream, glossy glaze toppings, and handmade pieces. This is our top choice!",
+      price: "Starting from ₹999",
+      image: "/images/wedding-cake.png",
       category: "Signature",
       rating: 5.0,
       reviewCount: 284,
-      prepTime: "48 hours",
-      servings: "12-15 people",
+      prepTime: "24 hours",
+      servings: "30+ People",
       isSignature: true,
       features: [
-        "Gold leaf decoration",
-        "Custom message",
-        "Premium packaging",
-        "Delivery included",
+        "Customization Available",
+        "Flavors like your choice",
+        "Premium Packaging",
+        "Freshly Baked",
       ],
     },
     {
       id: 2,
-      name: "Chocolate Velvet Symphony",
-      description: "Rich Belgian chocolate layers with raspberry coulis",
+      name: "Dark Chocolate Truffle Slice",
+      description:
+        "Intense dark chocolate ganache layered between moist sponge.",
       longDescription:
-        "Decadent Belgian dark chocolate cake with layers of chocolate mousse, fresh raspberry coulis, and finished with a mirror chocolate glaze. A chocolate lover's dream.",
-      price: "₹72.99",
-      originalPrice: "₹82.99",
-      image:
-        "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&h=400&fit=crop&crop=center",
+        "Indulge in a profoundly intense dessert masterpiece showcasing alternating layers of moist chocolate sponge cake, beautifully finished with a coating of fine premium chocolate flakes!",
+      price: "Starting from ₹49",
+      // originalPrice: "₹99.00",
+      image: "/images/chocolate-pastry.png",
       category: "Premium",
       rating: 4.9,
-      reviewCount: 197,
-      prepTime: "24 hours",
-      servings: "10-12 people",
+      reviewCount: 367,
+      prepTime: "6 hours (bulk)",
+      servings: "1 person",
       isPremium: true,
       features: [
-        "Mirror glaze finish",
-        "Fresh berry garnish",
-        "Edible flowers",
-        "Temperature controlled",
+        "Dark cocoa",
+        "Silky ganache coating",
+        "Fine chocolate shavings",
+        "Eggless Pastry",
       ],
     },
     {
       id: 3,
-      name: "Garden Rose Wedding Cake",
-      description: "Elegant floral design perfect for weddings",
+      name: "Moringa & Jaggery Biscuits",
+      description:
+        "Nutrient-rich moringa greens sweetened with organic country jaggery.",
       longDescription:
-        "Three-tier vanilla and strawberry cake adorned with handcrafted sugar roses, delicate piping, and pearl accents. Customizable colors and flavors available.",
-      price: "₹320.99",
-      image:
-        "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500&h=400&fit=crop&crop=center",
-      category: "Wedding",
+        "A healthy, tea time snack blending the superfood benefits of organic moringa leaves with the natural iron-rich sweetness of unrefined jaggery, baked to crunchy perfection!",
+      price: "Starting from ₹199",
+      image: "/images/featured-cookies.png",
+      category: "Signature",
       rating: 4.8,
       reviewCount: 89,
-      prepTime: "72 hours",
-      servings: "50-60 people",
-      isPremium: true,
+      prepTime: "12 hours",
+      servings: "10+ people",
+      isSignature: true,
       features: [
-        "Handcrafted sugar flowers",
-        "Custom color scheme",
-        "Pearl decorations",
-        "Wedding consultation",
+        "100% organic jaggery",
+        "Superfood moringa powder",
+        "No refined sugar",
+        "High dietary fiber",
       ],
     },
   ];
@@ -174,7 +173,7 @@ const FeaturedCake = () => {
                           {cake.servings}
                         </div>
                         <div className="text-xs text-muted-foreground">
-                          servings
+                          Servings
                         </div>
                       </div>
                     </div>
@@ -218,7 +217,7 @@ const FeaturedCake = () => {
                   <h4 className="font-bold text-foreground text-[#2D2822]">
                     What makes it special:
                   </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-2 gap-3">
                     {cake.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
@@ -232,9 +231,9 @@ const FeaturedCake = () => {
                 </div>
 
                 {/* Price and Actions */}
-                <div className="flex items-center justify-between pt-6 border-t border-t-[#D4A57433]">
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-3">
+                <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between pt-4 border-t border-t-[#D4A57433] gap-4 sm:gap-0">
+                  <div className="space-y-2 order-2 sm:order-1">
+                    <div className="flex items-center space-x-6">
                       <span className="text-3xl font-bold text-primary text-[#CC1015]">
                         {cake.price}
                       </span>
@@ -256,9 +255,9 @@ const FeaturedCake = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-3">
-                    <a href={`tel:+919005163430`}>
-                      <button className="flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
+                  <div className="flex items-center space-x-3 order-1 sm:order-2 w-full sm:w-auto">
+                    <a href={`tel:+919005163430`} className="w-full sm:w-auto">
+                      <button className="flex items-center justify-center gap-2 transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2 w-full sm:w-auto">
                         <div className="w-4 h-4 relative">
                           <ImageWithLoading
                             className="object-contain"
@@ -277,7 +276,7 @@ const FeaturedCake = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-20 flex items-center justify-center">
+        <div className="text-center mt-20 mb-10 flex items-center justify-center">
           <div className="border-t-[0.67px] border-[#D4A5741A] shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] flex flex-col items-center gap-4 w-fit py-10 px-8 rounded-xl">
             <h3 className="text-2xl font-bold text-foreground text-[#2D2822]">
               Need a Custom Creation?
@@ -287,7 +286,10 @@ const FeaturedCake = () => {
               special occasion. Let's bring your vision to life!
             </p>
             <button className="transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-transparent text-white bg-[#CC1015] rounded-2xl px-4 py-2">
-              <a href={`tel:+919005163430`} className="flex items-center justify-center gap-2 ">
+              <a
+                href={`tel:+919005163430`}
+                className="flex items-center justify-center gap-2 "
+              >
                 <div className="w-4 h-4 relative">
                   <ImageWithLoading
                     className="object-contain"
