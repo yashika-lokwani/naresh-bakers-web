@@ -21,7 +21,7 @@ export default function Home() {
         <CustomerFeedback />
         <WhatsAppOverlay/>
       </div>
-      <SmoothScroll />
+      {/* <SmoothScroll /> */}
       <Footer />
     </div>
   );
