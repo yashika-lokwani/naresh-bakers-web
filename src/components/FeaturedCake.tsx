@@ -1,7 +1,25 @@
 import ImageWithLoading from "@/shared/ImageWithLoading";
 
+type Cake = {
+  id: number;
+  name: string;
+  description: string;
+  longDescription: string;
+  price: string;
+  originalPrice?: string;
+  image: string;
+  category: string;
+  rating: number;
+  reviewCount: number;
+  prepTime: string;
+  servings: string;
+  isSignature?: boolean;
+  isPremium?: boolean;
+  features: string[];
+};
+
 const FeaturedCake = () => {
-  const featuredCakes = [
+  const featuredCakes: Cake[] = [
     {
       id: 1,
       name: "Wedding Cake",
@@ -237,9 +255,9 @@ const FeaturedCake = () => {
                       <span className="text-3xl font-bold text-primary text-[#CC1015]">
                         {cake.price}
                       </span>
-                      {cake.originalPrice && (
+                      {cake?.originalPrice && (
                         <span className="text-lg text-muted-foreground line-through">
-                          {cake.originalPrice}
+                          {cake?.originalPrice}
                         </span>
                       )}
                     </div>
