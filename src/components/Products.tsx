@@ -18,7 +18,6 @@ const Products = () => {
       rating: 4.9,
       reviewCount: 127,
       isBestseller: true,
-      isOnSale: true,
     },
     {
       id: 2,
@@ -38,10 +37,11 @@ const Products = () => {
       description:
         "A luxurious chocolate treat featuring tender layers, a rich cocoa taste, and a smooth, melt-in-your-mouth texture!",
       price: "₹449",
-      image: "/images/Chocolate_cake.png",
+      image: "/images/chocolate_cake.png",
       category: "Cakes",
       rating: 4.7,
       reviewCount: 156,
+      isOnSale: true,
     },
     {
       id: 4,
@@ -53,6 +53,7 @@ const Products = () => {
       category: "Pastries",
       rating: 4.8,
       reviewCount: 203,
+      isOnSale: true,
     },
     {
       id: 5,
@@ -86,8 +87,8 @@ const Products = () => {
       price: "₹479",
       image: "/images/Almond_Cookies.png",
       category: "Cookies",
-      rating: 4.9,
-      reviewCount: 92,
+      rating: 4.8,
+      reviewCount: 84,
       isBestseller: true,
     },
     {
@@ -99,7 +100,7 @@ const Products = () => {
       image: "/images/Pista_Cookies.png",
       category: "Cookies",
       rating: 4.9,
-      reviewCount: 92,
+      reviewCount: 75,
       isBestseller: true,
     },
     {
@@ -111,7 +112,7 @@ const Products = () => {
       image: "/images/Mixed_dry_fruit.png",
       category: "Cookies",
       rating: 4.9,
-      reviewCount: 92,
+      reviewCount: 96,
       isBestseller: true,
     },
   ];
@@ -186,6 +187,7 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
+          <br />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {displayedProducts.map((product: any) => (
               <div

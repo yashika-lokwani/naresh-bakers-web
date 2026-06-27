@@ -1,4 +1,5 @@
 import ImageWithLoading from "@/shared/ImageWithLoading";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -43,7 +44,7 @@ const Footer = () => {
         </div> */}
 
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-6">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-6 mx-2 md:mx-4">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="space-y-4">
@@ -63,22 +64,42 @@ const Footer = () => {
                   </h3>
                 </div>
               </div>
-              <p className="text-background/80 text-sm leading-relaxed">
-                Where artisan craftsmanship meets innovative flavors. Creating
-                sweet memories since 2008 with passion, quality, and love for
-                the craft of baking.
+              <p className="text-background/80 text-sm leading-relaxed max-w-[80%]">
+                Artisan craftsmanship meets innovation. Creating sweet memories
+                since 2016 & love for the craft of baking!
               </p>
             </div>
 
+            <h2 className="mb-2">Follow Us on</h2>
+
             <div className="flex space-x-3">
               <button className="text-background hover:text-primary hover:bg-background/10 rounded-xl">
-                F
+                <Link
+                  href="https://www.instagram.com/shreenareshbakers"
+                  target="_blank"
+                >
+                  <div className="w-7 h-7 relative">
+                    <ImageWithLoading
+                      className="object-contain"
+                      src={`/icons/instagram_svg.svg`}
+                      alt={`naresh-logo.png`}
+                    />
+                  </div>
+                </Link>
               </button>
               <button className="text-background hover:text-primary hover:bg-background/10 rounded-xl">
-                I
-              </button>
-              <button className="text-background hover:text-primary hover:bg-background/10 rounded-xl">
-                T
+                {/* <Link
+                  href="https://www.instagram.com/shreenareshbakers"
+                  target="_blank"
+                > */}
+                <div className="w-7 h-7 relative">
+                  <ImageWithLoading
+                    className="object-contain"
+                    src={`/icons/facebook_svg.svg`}
+                    alt={`naresh-logo.png`}
+                  />
+                </div>
+                {/* </Link> */}
               </button>
             </div>
           </div>
@@ -130,10 +151,11 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="text-sm text-background/80">
-                  <div className="font-medium text-background">
-                    Aryan Restaurant, Jal Sansthan, C-3339, kiddy dress, Meena
-                    Bakery Rd, opposite SKD School, Block C, Rajajipuram,
+                  <div className="font-medium text-background max-w-[80%]">
+                    Aryan Restaurant, Jal Sansthan, C-3339, Kiddy dress, Meena
+                    Bakery Rd Opposite SKD School, Block C Rajajipuram
                   </div>
+                  <br />
                   <div>Lucknow, Uttar Pradesh 226017</div>
                   <div className="mt-1 text-primary text-xs font-medium">
                     <a
@@ -168,15 +190,15 @@ const Footer = () => {
                 </span>
               </div>
               <div className="space-y-2 text-sm">
-                <div className="flex justify-between items-center">
+                <div className="flex  items-center">
                   <span className="text-background/80">Monday - Friday</span>
-                  <span className="text-background font-medium">
+                  <span className="ml-2 text-background font-medium">
                     9:30 AM - 10:30 PM
                   </span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex  items-center">
                   <span className="text-background/80">Saturday - Sunday</span>
-                  <span className="text-background font-medium">
+                  <span className="ml-2 text-background font-medium">
                     9:30 AM - 11:00 PM
                   </span>
                 </div>

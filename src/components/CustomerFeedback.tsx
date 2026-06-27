@@ -28,13 +28,13 @@ const CustomerFeedback = () => {
             </div>
           </div>
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">50,000+</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">50K+</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Happy Customers
             </div>
           </div>
           <div className="rounded-2xl  border-t-[0.67px] border-[#D4A5741A] shadow-[0px_4px_6px_-4px_#0000001A,0px_10px_15px_-3px_#0000001A] flex flex-col items-center justify-center py-6">
-            <div className="text-3xl font-bold text-[#CC1015] mb-2">1,00,000+</div>
+            <div className="text-3xl font-bold text-[#CC1015] mb-2">100K+</div>
             <div className="text-sm text-muted-foreground font-medium text-[#866741]">
               Orders Completed
             </div>
@@ -49,7 +49,7 @@ const CustomerFeedback = () => {
 
         {/* Customer Testimonial Section */}
         <div className="border-t-[0.67px] border-[#D4A5741A] bg-[linear-gradient(90deg,rgba(212,165,116,0.1)_0%,rgba(232,213,196,0.2)_100%)] rounded-3xl p-12 text-center backdrop-blur-sm shadow-lg mb-12">
-          <div className="max-w-4xl mx-auto space-y-8 flex flex-col items-center">
+          <div className="mx-4 space-y-8 flex flex-col items-center">
             <div className="flex justify-center">
               <div className="flex space-x-2">
                 {[...Array(5)].map((_, i) => (
@@ -63,17 +63,18 @@ const CustomerFeedback = () => {
                 ))}
               </div>
             </div>
-            <blockquote className="text-2xl lg:text-3xl font-medium text-foreground leading-relaxed text-[#2D2822]">
-              "The best bakery in Rajajipuram since decades 🎀🧡 Freshest cakes,
-              yummiest patties and the most cordial and generous staff. Five
-              stars ‼️🎉"
+            <blockquote className="text-xl lg:text-2xl font-medium text-foreground leading-relaxed text-[#2D2822]">
+              "Absolutely loved my experience with Naresh Bakers! The customized
+              cake was beautifully made, and the taste and quality exceeded my
+              expectations. We also ordered patties, burgers, sandwiches, and
+              pizza everything was fresh and delicious! ❤️🎂"
             </blockquote>
             <div className="space-y-2">
               <div className="font-bold text-primary textext-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-[#866741]t-lg text-[#CC1015]">
-                Pooja
+                Yashika
               </div>
               <div className="text-sm text-muted-foreground text-[#866741]">
-                Loyal customers since 2022
+                Loyal customer since 2018
               </div>
             </div>
             <button className="transition-all duration-300 group shadow-[0px_8px_10px_-6px_#0000001A,0px_20px_25px_-5px_#0000001A] border-2 border-[#CC1015] text-[#CC1015] bg-white rounded-2xl px-4 py-2">

@@ -48,7 +48,7 @@ const FeaturedCake = () => {
         "Intense dark chocolate ganache layered between moist sponge.",
       longDescription:
         "Indulge in a profoundly intense dessert masterpiece showcasing alternating layers of moist chocolate sponge cake, beautifully finished with a coating of fine premium chocolate flakes!",
-      price: "Starting from ₹69",
+      price: "Starting from ₹59",
       // originalPrice: "₹99.00",
       image: "/images/chocolate-pastry.png",
       category: "Premium",
@@ -222,7 +222,7 @@ const FeaturedCake = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight text-[#2D2822]">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight text-[#2D2822]">
                     {cake.name}
                   </h3>
                   <p className="text-lg text-muted-foreground leading-relaxed text-[#866741]">

@@ -19,13 +19,13 @@ export default function ImageWithLoading({
   return (
     <>
       {isLoading && (
-        <div className="flex items-center justify-center w-full h-full rounded">
-          <span className="relative w-full h-full inline-block">
-            <span className="absolute w-full h-full rounded-full border-t-4 border-r-4 border-white border-solid box-border animate-spin" />
-            <span
-              className="absolute w-full h-full rounded-full border-l-4 border-b-4 border-[#ec2127] border-solid box-border"
-              style={{ animation: "spin 0.5s linear infinite reverse" }}
-            />
+        <div className="absolute inset-0 flex items-center justify-center rounded">
+          <span
+            className="relative inline-block size-12 max-h-12 max-w-12 rounded-full text-[#343434] perspective-[1000px] transform-[rotateZ(45deg)]"
+            aria-hidden="true"
+          >
+            <span className="absolute left-0 top-0 size-full rounded-full transform-[rotateX(70deg)] animate-[loader-spin_1s_linear_infinite]" />
+            <span className="absolute left-0 top-0 size-full rounded-full text-[#ff3d00] transform-[rotateY(70deg)] animate-[loader-spin_1s_linear_infinite] [animation-delay:0.4s]" />
           </span>
         </div>
       )}

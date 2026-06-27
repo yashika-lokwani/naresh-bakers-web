@@ -5,7 +5,7 @@ const featuredItems = [
   {
     title: "Pineapple Cake",
     description: "Moist vanilla pineapple delight",
-    imageSrc: "/images/pineapple.png",
+    imageSrc: "/images/pineapple_cake.png",
     imageAlt: "Signature Chocolate Cake",
   },
 
@@ -35,10 +35,10 @@ const Hero = () => {
   return (
     <section id="home" className="relative py-8 overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-4 items-center">
+        <div className="grid lg:grid-cols-2 gap-0 md:gap-4 items-center">
           {/* Left Content */}
           <div className="space-y-10">
-            <div className="space-y-6 flex flex-col gap-2 items-center md:items-start">
+            <div className="space-y-6 flex flex-col gap-0 md:gap-2 items-center md:items-start">
               <div className="border border-[#D4A57433] w-fit rounded-full px-3 gap-1 py-2 flex items-center justify-center">
                 <div className="w-4 h-4 relative">
                   <ImageWithLoading
@@ -55,7 +55,7 @@ const Hero = () => {
               <div className="space-y-4">
                 <h1 className="text-4xl text-center md:text-left lg:text-7xl font-bold text-foreground leading-[0.95] tracking-tight text-[#2D2822]">
                   Artisan
-                  <span className="inline md:block text-primary text-[#CC1015] sm:ml-2 md:ml-0">
+                  <span className="pl-1 md:pl-0 inline md:block text-primary text-[#CC1015] sm:ml-2 md:ml-0">
                     Perfection
                   </span>
                   <span className="block text-3xl lg:text-5xl font-medium text-muted-foreground text-[#866741] mt-1">
