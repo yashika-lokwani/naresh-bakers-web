@@ -71,7 +71,7 @@ const FeaturedCake = () => {
         "Nutrient-rich moringa greens sweetened with organic country jaggery.",
       longDescription:
         "A healthy, tea time snack blending the superfood benefits of organic moringa leaves with the natural iron-rich sweetness of unrefined jaggery, baked to crunchy perfection!",
-      price: "Starting from ₹199",
+      price: "Starting from ₹499",
       image: "/images/featured-cookies.png",
       category: "Signature",
       rating: 4.8,
